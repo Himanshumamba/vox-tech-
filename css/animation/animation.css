@@ -1,0 +1,174 @@
+
+.rotate-shine {
+  position: relative;
+  float: left;
+  left: 0;
+  top: 0;
+  margin: 0 30px 0 0;
+  background: #fff;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  
+-moz-border-radius: 100%;/*Firefox*/
+-webkit-border-radius: 100%;/*Safari, Chrome*/
+border-radius: 100%;
+
+-moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);/*FF 3.5+*/
+-webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+
+ transition: all 0.3s linear;
+ -webkit-transition: all 0.3s linear;
+ -o-transition: all 0.3s linear;
+ -moz-transition: all 0.3s linear;
+
+}
+.col:hover .rotate-shine:after {
+  content: '';
+  background: trasparent;
+  width: 120%;
+  height: 120%;
+  position: absolute;
+-moz-border-radius: 100%;/*Firefox*/
+-webkit-border-radius: 100%;/*Safari, Chrome*/
+border-radius: 100%;
+  margin: -7px;
+  top: 0;
+  left: 0;
+  opacity: 0.7;
+  
+-moz-box-shadow: 4px 6px 9px -4px rgba(96, 255, 224, 0.88);/*FF 3.5+*/
+-webkit-box-shadow: 4px 6px 9px -4px rgba(96, 255, 224, 0.88);/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+  box-shadow: 4px 6px 9px -4px rgba(96, 255, 224, 0.88);
+
+  
+  animation: rotate 2s infinite linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+
+.col:hover .rotate-shine {
+ background-color: #2A3644;
+
+}
+
+.rotate-shine i {
+ color: #2A3644;
+ display: inline-block;
+ font-size: 31px;
+ height: 70px !important;
+ line-height: 70px;
+ max-width: 100%;
+ position: relative;
+ text-align: center;
+ vertical-align: middle;
+ width: 70px !important;
+ word-spacing: 1px;
+ text-shadow: 0 0 0 rgba(0, 0, 0, 0.3)
+ transition: all 0.3s linear;
+ -webkit-transition: all 0.3s linear;
+ -o-transition: all 0.3s linear;
+ -moz-transition: all 0.3s linear;
+}
+.col:hover .rotate-shine i {
+ color: #fff;
+ text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.3)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$n: 36;
+$m: 12;
+$d: 1.65em;
+$r: 45em;
+ $unit--animation-cutecircleanimation: 20.37s;
+ @mixin size($r) {
+ width: $r;
+ height: $r;
+ margin: -($r / 2) 0 0 -($r / 2);
+}
+
+.cutecircleanimation { position: absolute; top: 50%; left: 50%;  animation: animation--cutecircleanimation $unit--animation-cutecircleanimation ease-in-out infinite forwards;
+background: transparent; border-radius: 50%;  @include size($d);
+ @include transition(box-shadow .45s ease-in-out);
+}
+ @keyframes 
+animation--cutecircleanimation {  @for $i from 0 through $n {
+ # {
+$i * 100% / $n
+} {
+ $sh: ();
+ @for $j from 0 to $n {
+ $cr: (($i + $j)%($n/$m))*2*$r/$n;
+ $cr: 2*$d + min($cr, 2*$r/$m - $cr);
+ $offx: $cr*cos($j*2*pi()/$n);
+ $offy: $cr*sin($j*2*pi()/$n);
+ $sh: $sh, $offx $offy hsla($j*360/$n, 100%, 50%, (random(10) * .1));
+}
+ box-shadow: $sh;
+}
+}
+ 0% {
+ @include transform(  rotate(0)  );
+}
+ 100% {
+ @include transform(  rotate(940deg)  );
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
