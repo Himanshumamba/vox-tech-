@@ -1,0 +1,48 @@
+
+.intro { height: 264px; margin: 0 auto; padding: 0; }
+
+.row-seagreen { background: none repeat scroll 0 0 #1ABC9C; border-top: 1px solid #40DCBC; height: auto; margin: 0 auto; overflow: hidden; padding: 60px 0; position: relative; }
+
+.row-seagreen h3 { color: #fff; }
+
+.row-seagreen p { color: #fff; font-size: 15px; }
+
+.row-seagreen a { color: #2A3644; font-size: 15px; }
+
+.second { background: none repeat scroll 0 0 #FFFFFF; border-top: 1px solid #E3E3E3; height: auto; margin: 0 auto; overflow: hidden; padding: 60px 0; position: relative; }
+
+.second .bg { background: url("../img/parallax/trainers.html") 50% 0 no-repeat fixed; height: auto; margin: 0 auto; padding: 0; position: absolute; width: 900px; z-index: 200; }
+
+.third { background: none repeat scroll 0 0 #F3F3F3; border-top: 1px solid #E3E3E3; padding: 60px 0; position: relative; }
+
+.third .title {  background: url("../img/pattern-stripes.png") repeat-x scroll 0 50% rgba(0, 0, 0, 0); overflow: hidden; }
+
+.third .title span { background: none repeat scroll 0 0 #F3F3F3; float: left; padding: 0 31px 0 0 !important; }
+
+.forth { background: none repeat scroll 0 0 #F6F6F6; border-top: 1px solid #E6E6E6; padding: 60px 0; position: relative; }
+
+.fifth { background: url("../img/3d/6.html") no-repeat scroll center 0 rgba(0, 0, 0, 0); border-bottom: 1px solid #EDF5FA; border-top: 1px solid #E6E8E8; margin: 0 auto; padding: 60px 0 0; position: relative; }
+
+
+.row-backimg { background: url("../img/strip-img.jpg") no-repeat scroll center 0 rgba(0, 0, 0, 0); border-bottom: 1px solid #E3E3E3; border-top: 1px solid #E3E3E3; margin: 0 auto; padding: 60px 0 0; position: relative; }
+
+.row-backimg-inner { background: none repeat scroll 0 0 rgba(248, 255, 255, 0.87); border-top: 1px solid rgba(255, 255, 255, 0.87); margin-top: 60px; padding: 60px 0; }
+
+.story { margin: 0 auto; min-width: 980px; overflow: auto; width: 980px; }
+
+.story .float-left, .story .float-right { padding: 100px 0 0 0; position: relative; width: 350px; }
+ @media (min-width: 1300px) {
+.intro {
+ height: 347px;
+}
+}
+@media (max-width: 979px) {
+.intro {
+ height: 200px;
+}
+}
+@media (max-width: 767px) {
+.intro {
+ height: 198px;
+}
+}
